@@ -20,7 +20,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors()); // Allow all origins or specify only localhost
+app.use(cors( {origin:["https://codeera-j7tv.onrender.com"]})); // Allow all origins or specify only localhost
 
 mongoose
   .connect(process.env.MONGO)
